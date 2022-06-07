@@ -1,11 +1,10 @@
-import react from "react";
 import user from '../images/User.jpg';
 export function UserSignUp() {
     return (
         <div className="userSignUpForm">
             <div className="userForm">
                 <div className="userFormHeader">
-                    <img src={user} height="100" />
+                    <img src={user} height="100" alt="user profile" />
                     <span className="signUpTitle">User Profile</span>
                 </div>
 

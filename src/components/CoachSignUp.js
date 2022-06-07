@@ -1,11 +1,10 @@
-import react from "react";
 import lifeCoach from '../images/LifeCoach.jpg';
 export function CoachSignUp() {
     return (
         <div className="coachSignUpForm">
             <div className="coachForm">
                 <div className="coachFormHeader">
-                    <img src={lifeCoach} height="100" />
+                    <img src={lifeCoach} height="100" alt="lifeCoach profile"/>
                     <span className="signUpTitle">Life Coach Profile</span>
                 </div>
 

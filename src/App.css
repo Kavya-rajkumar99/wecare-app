@@ -1,5 +1,9 @@
-.App {
-  text-align: center;
+
+/* .App {
+text-align: center;
+} */
+body{
+background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgb(214, 166, 61) 100%);
 }
 
 .App-logo {
@@ -51,10 +55,17 @@
   color: white;
   padding:20px;
   border-radius: 10px;
+
 }
 .formRow{
   display: flex;
   gap:1rem;
+  flex-wrap: wrap;
+}
+@media (max-width:450px){
+  .formRow{
+    justify-content: center;
+  }
 }
 .form-Row{
   display: flex;
@@ -72,6 +83,9 @@
 }
 .coachFormHeader,.userFormHeader{
   margin-bottom: 10px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
 }
 .CoachLoginForm,.UserLoginForm{
   display: flex;
@@ -80,14 +94,16 @@
   align-items: center;
 }
 .CoachLoginForm > input,.CoachLoginForm>button,.UserLoginForm > input,.UserLoginForm>button{
-  width:300px;
+  /* width:300px; */
+  width:70vw;
   
 }
 .coach-login,.user-login{
-  width:400px;
+  /* width:400px; */
+  width:80vw;
   background-color: black;
   color: white;
-  padding:20px;
+  padding:30px;
   border-radius: 10px;
 }
 .LoginForm{

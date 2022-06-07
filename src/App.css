@@ -44,48 +44,9 @@ background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgb(214, 166, 61) 100%)
   background-color: black;
   border-radius: 10px;
 }
-.coachSignUpForm,.userSignUpForm{
-  display: grid;
-  place-content: center;
-  min-height: 100vh;
-  
-}
-.coachForm,.userForm{
-  background-color: black;
-  color: white;
-  padding:20px;
-  border-radius: 10px;
-
-}
-.formRow{
-  display: flex;
-  gap:1rem;
-  flex-wrap: wrap;
-}
-@media (max-width:450px){
-  .formRow{
-    justify-content: center;
-  }
-}
-.form-Row{
-  display: flex;
-  flex-direction: column;
-  gap:0.5rem;
-}
-.signupForm{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 .signUpTitle{
   font-size: 24px;
   font-weight: bold;
-}
-.coachFormHeader,.userFormHeader{
-  margin-bottom: 10px;
-  display:flex;
-  align-items: center;
-  justify-content: center;
 }
 .CoachLoginForm,.UserLoginForm{
   display: flex;
@@ -140,3 +101,33 @@ background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgb(214, 166, 61) 100%)
     transform: rotate(360deg);
   }
 }
+.coach-user-form{
+  display: flex;
+  flex-direction: column;
+  width:450px;
+  background-color: black;
+  color: white;
+  align-items: center;
+  padding:20px;
+  border-radius: 10px;
+}
+.coach-user-row{
+  display: flex;
+  gap:1rem;
+  flex-wrap:wrap ;
+ 
+}
+.genderField{
+  margin-left:0px;
+}
+.sign-up-form{
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  min-height: 100vh;
+} 
+.dobField{
+  width:190px;
+}
+ 
+

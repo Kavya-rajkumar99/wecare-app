@@ -1,16 +1,15 @@
 import lifeCoach from '../images/LifeCoach.jpg';
 export function CoachSignUp() {
     return (
-        <div className="coachSignUpForm">
-            <div className="coachForm">
-                <div className="coachFormHeader">
+        <div className="sign-up-form">
+            <div className="coach-user-form">
+                <div >
                     <img src={lifeCoach} height="100" alt="lifeCoach profile"/>
                     <span className="signUpTitle">Life Coach Profile</span>
                 </div>
 
-                <form className="signupForm">
-
-                    <div className="formRow">
+                <form >
+                        <div className="coach-user-row">
                         <div>
                             <label htmlFor="name">Name</label>
                             <br />
@@ -23,15 +22,15 @@ export function CoachSignUp() {
                         </div>
                     </div>
 
-                    <div className="form-Row">
+                    <div className="coach-user-row">
                         <div>
                             <label htmlFor="dateOfBirth">Date Of Birth</label>
                             <br />
-                            <input type="date" name="dateOfBirth" id="dateOfBirth" />
+                            <input type="date" name="dateOfBirth" id="dateOfBirth" className="dobField"/>
 
                         </div>
 
-                        <div>
+                        <div className="genderField">
                             <label htmlFor="gender">Gender</label>
                             <br />
                             <input type="radio" name="gender" id="male" value="Male" />
@@ -41,7 +40,7 @@ export function CoachSignUp() {
                         </div>
                     </div>
 
-                    <div className="formRow">
+                    <div className="coach-user-row">
                         <div>
                             <label htmlFor="mobileNo">Mobile Number</label>
                             <br />
@@ -55,7 +54,7 @@ export function CoachSignUp() {
 
                         </div>
                     </div>
-                    <div className="mt-4 text-center">
+                    <div className="text-center mt-4">
                         <button type="submit" className="btn btn-success">Register</button>
                     </div>
                 </form>

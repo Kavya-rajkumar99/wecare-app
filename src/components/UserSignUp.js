@@ -1,16 +1,16 @@
 import user from '../images/User.jpg';
 export function UserSignUp() {
     return (
-        <div className="userSignUpForm">
-            <div className="userForm">
-                <div className="userFormHeader">
+        <div className="sign-up-form">
+            <div className="coach-user-form">
+                <div>
                     <img src={user} height="100" alt="user profile" />
                     <span className="signUpTitle">User Profile</span>
                 </div>
 
-                <form className="signupForm">
+                <form >
 
-                    <div className="formRow">
+                    <div className="coach-user-row">
                         <div>
                             <label htmlFor="name">Name</label>
                             <br />
@@ -23,7 +23,7 @@ export function UserSignUp() {
                         </div>
                     </div>
 
-                    <div className="formRow">
+                    <div className="coach-user-row">
                         <div>
                             <label htmlFor="mobileNo">Name</label>
                             <br />
@@ -36,15 +36,15 @@ export function UserSignUp() {
                         </div>
                     </div>
 
-                    <div className="form-Row">
+                    <div className="coach-user-row">
                         <div>
                             <label htmlFor="dateOfBirth">Date Of Birth</label>
                             <br />
-                            <input type="date" name="dateOfBirth" id="dateOfBirth" />
+                            <input type="date" name="dateOfBirth" id="dateOfBirth" className="dobField" />
 
                         </div>
 
-                        <div>
+                        <div className="genderField">
                             <label htmlFor="gender">Gender</label>
                             <br />
                             <input type="radio" name="gender" id="male" value="Male" />
@@ -54,7 +54,7 @@ export function UserSignUp() {
                         </div>
                     </div>
 
-                    <div className="formRow">
+                    <div className="coach-user-row">
                         <div>
                             <label htmlFor="pincode">Pincode</label>
                             <br />
@@ -68,7 +68,7 @@ export function UserSignUp() {
 
                         </div>
                     </div>
-                    <div className="formRow">
+                    <div className="coach-user-row">
                         <div>
                             <label htmlFor="state">State</label>
                             <br />

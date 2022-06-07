@@ -6,7 +6,95 @@
   height: 40vmin;
   pointer-events: none;
 }
-
+.user-coach{
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+}
+.cards{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap:1rem;
+  align-items: center;
+  justify-content: center;
+  color:white;
+}
+.coachCardBody, .userCardBody{
+  display: flex;
+  flex-direction: column;
+  gap:10px;
+}
+.coachImage,.userImage{
+  height:100px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+.coachCard,.userCard{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height:350px;
+  width:300px;
+  background-color: black;
+  border-radius: 10px;
+}
+.coachSignUpForm,.userSignUpForm{
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+  
+}
+.coachForm,.userForm{
+  background-color: black;
+  color: white;
+  padding:20px;
+  border-radius: 10px;
+}
+.formRow{
+  display: flex;
+  gap:1rem;
+}
+.form-Row{
+  display: flex;
+  flex-direction: column;
+  gap:0.5rem;
+}
+.signupForm{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.signUpTitle{
+  font-size: 24px;
+  font-weight: bold;
+}
+.coachFormHeader,.userFormHeader{
+  margin-bottom: 10px;
+}
+.CoachLoginForm,.UserLoginForm{
+  display: flex;
+  flex-direction: column;
+  gap:10px;
+  align-items: center;
+}
+.CoachLoginForm > input,.CoachLoginForm>button,.UserLoginForm > input,.UserLoginForm>button{
+  width:300px;
+  
+}
+.coach-login,.user-login{
+  width:400px;
+  background-color: black;
+  color: white;
+  padding:20px;
+  border-radius: 10px;
+}
+.LoginForm{
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
